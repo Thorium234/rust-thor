@@ -1,5 +1,19 @@
-The Rust Programming Language.pdf
-*.pdf
-Piscine-rust-Zone01/*
-The Cargo Book.pdf
+# Build artifacts
 /target/
+
+# Executables
+main
+
+# Editor & OS files
+*.swp
+*.swo
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Rust backup files
+**/*.rs.bk  
+
+#unnecessary files
+*.lock 
