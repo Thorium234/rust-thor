@@ -2,3 +2,4 @@ The Rust Programming Language.pdf
 *.pdf
 Piscine-rust-Zone01/*
 The Cargo Book.pdf
+/target/
