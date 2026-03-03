@@ -49,4 +49,4 @@ here is the structure
         ├── milestone1
         └── milestone1.d
 
-
+N/B the Rust naming conversion is snakecase eg is_snowing not isSnowing 
