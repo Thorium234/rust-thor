@@ -1,5 +1,7 @@
 ========Rust for Thorium======
 We start by looking at the version and dependencies capable of rust 
+rustc --version
+cargo --version
 
 how to run a rust project 
 its extention is .rs
