@@ -107,5 +107,36 @@ println!("stone says:{}",stone_cold);
 let string: String=String::from("hello,");
 let slice:&str=&string;//&str[0..5]
  println!("slice values: {}",slice);
+
+
+//rust compiler cleans memory automatically hence yo cant access a function outside main function
+//functions
+//entry points
+//a function, variables should be writen in snakecase
+//naming convenions in rust is:
+//1. snake_case: hello_world
+//2. kebab case : hello-world
+
+ //new function
+ hello_world();
+ //hoisting-> where do we define a function and call it
+tell_height(122);
+human_details ("thrium",55,182.0);
 }
+fn hello_world(){
+ println!("hello, rust!");
+
+}
+//inserting values
+fn tell_height(height:u32){
+ println!("my height is:{}",height);
+
+}
+
+//you can insert more than one value 
+fn human_details(name:&str,age:u32,height:f32){
+ println!("my name is{},i am {} years old, and my height is {} cm.",name,age,height);
+}
+
+
 
