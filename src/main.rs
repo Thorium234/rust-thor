@@ -189,6 +189,6 @@ fn human_details(name:&str,age:u32,height:f32){
 
 //BMi= height(kg)/height(m)^2
 fn calculate_bmi(weight_kg:f64,height_m:f64)->f64{
-weight_kg/height_m*height_m;
+weight_kg/height_m*height_m
 }
 
