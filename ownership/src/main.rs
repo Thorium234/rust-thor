@@ -35,6 +35,13 @@ fn main() {
     let mut s4 = String::from("hello");
     change(&mut s4);
     println!("Changed string: {}", s4);
+
+//string can be muted
+let mut s = String::from("hello");
+s.push_str(", world!"); // push_str() appends a literal to a String
+println!("{s}"); // this will print `hello, world!`
+
+
 }
 
 fn takes_ownership(s: String) {
