@@ -1,0 +1,99 @@
+(base) thorium@thorium-HP-ProBook-x360-11-G2-EE:~/Desktop/programming/2026/Rust/milestone1/struct_data$ cargo run 
+   Compiling struct_data v0.1.0 (/home/thorium/Desktop/programming/2026/Rust/milestone1/struct_data)
+error: expected type, found `=`
+ --> src/main.rs:3:22
+  |
+3 |     let mut account: = BankAccount{
+  |                    - ^ expected type
+  |                    |
+  |                    while parsing the type for the binding
+
+error: expected one of `,`, `.`, `?`, `}`, or an operator, found `;`
+ --> src/main.rs:4:36
+  |
+3 |     let mut account: = BankAccount{
+  |                        ----------- while parsing this struct
+4 |         owner:"thorium".to_string();
+  |                                    ^
+  |                                    |
+  |                                    expected one of `,`, `.`, `?`, `}`, or an operator
+  |                                    help: try adding a comma: `,`
+
+error: expected one of `!`, `)`, `,`, `.`, `::`, `?`, `{`, or an operator, found `:`
+  --> src/main.rs:10:28
+   |
+10 |     account.withdraw(amount:45.0);
+   |                            ^ expected one of 8 possible tokens
+   |
+help: maybe write a path separator here
+   |
+10 |     account.withdraw(amount::45.0);
+   |                             +
+
+error: expected one of `!` or `::`, found `BankAccount`
+  --> src/main.rs:20:5
+   |
+20 | imp BankAccount{
+   |     ^^^^^^^^^^^ expected one of `!` or `::`
+   |
+help: there is a keyword `impl` with a similar name
+   |
+20 | impl BankAccount{
+   |    +
+
+error: could not compile `struct_data` (bin "struct_data") due to 4 previous errors
+(base) thorium@thorium-HP-ProBook-x360-11-G2-EE:~/Desktop/programming/2026/Rust/milestone1/struct_data$ cargo run 
+   Compiling struct_data v0.1.0 (/home/thorium/Desktop/programming/2026/Rust/milestone1/struct_data)
+error: expected one of `!`, `(`, `+`, `::`, `;`, `<`, or `=`, found `{`
+ --> src/main.rs:3:33
+  |
+3 |     let mut account: BankAccount{
+  |                    -            ^ expected one of 7 possible tokens
+  |                    |
+  |                    while parsing the type for the binding
+
+error: could not compile `struct_data` (bin "struct_data") due to 1 previous error
+(base) thorium@thorium-HP-ProBook-x360-11-G2-EE:~/Desktop/programming/2026/Rust/milestone1/struct_data$ cargo run 
+   Compiling struct_data v0.1.0 (/home/thorium/Desktop/programming/2026/Rust/milestone1/struct_data)
+error: expected type, found `=`
+ --> src/main.rs:3:22
+  |
+3 |     let mut account: =  BankAccount{
+  |                    - ^ expected type
+  |                    |
+  |                    while parsing the type for the binding
+
+error: expected one of `,`, `.`, `?`, `}`, or an operator, found `;`
+ --> src/main.rs:5:29
+  |
+3 |     let mut account: =  BankAccount{
+  |                         ----------- while parsing this struct
+4 |         owner:"thorium".to_string(),
+5 |               balance:123.45;
+  |                             ^
+  |                             |
+  |                             expected one of `,`, `.`, `?`, `}`, or an operator
+  |                             help: try adding a comma: `,`
+
+error: expected identifier, found `45.0`
+  --> src/main.rs:10:30
+   |
+10 |     account.withdraw(amount::45.0);
+   |                              ^^^^ expected identifier
+
+error[E0615]: attempted to take value of method `check_balance` on type `BankAccount`
+ --> src/main.rs:8:13
+  |
+8 |     account.check_balance;
+  |             ^^^^^^^^^^^^^ method, not a field
+  |
+help: use parentheses to call the method
+  |
+8 |     account.check_balance();
+  |                          ++
+
+For more information about this error, try `rustc --explain E0615`.
+error: could not compile `struct_data` (bin "struct_data") due to 4 previous errors
+(base) thorium@thorium-HP-ProBook-x360-11-G2-EE:~/Desktop/programming/2026/Rust/milestone1/struct_data$ 
+
+
