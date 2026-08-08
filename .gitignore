@@ -1,0 +1,19 @@
+# Build artifacts
+/target/
+
+# Executables
+main
+
+# Editor & OS files
+*.swp
+*.swo
+*.log
+.DS_Store
+.vscode/
+.idea/
+
+# Rust backup files
+**/*.rs.bk  
+
+#unnecessary files
+*.lock 
