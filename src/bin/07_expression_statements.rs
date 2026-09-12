@@ -15,3 +15,4 @@ fn add (a:i32,b:i32)->i32{
 let y= add(4,7);
 println!("value of y is:{}",y);
 }
+//fincy
